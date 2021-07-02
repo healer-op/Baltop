@@ -6,7 +6,7 @@ fetch('api.json')
     const html = data.Survival.player_name.map(user =>{
     return `
     <div class="gg">
-    <p><img src='"http://cravatar.eu/avatar/"${user}"/64.png"' width="64px" alt="logo">${user}</p>
+    <p><img src="http://cravatar.eu/avatar/${user}/64.png" width="64px" alt="logo">${user}</p>
     </div>`;
 }).join('');
 document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
